@@ -1,0 +1,184 @@
+.widget ul ul {margin-bottom: unset; padding-left: unset;}
+.widget li {margin-bottom: 0px;}
+.widget.widget_block div#post-tree-container ul.custom-post-tree ul {
+  list-style-type: none !important;
+}
+div#post-tree-container ul {list-style: none !important;}
+
+
+#tax-tree-container {display: block; text-align: left !important; }
+div#tax-tree-container ul.custom-tax-tree {margin-bottom: 5px; list-style: none;}
+div.textwidget.widget-text ul.custom-tax-tree {
+    list-style: none;
+    justify-content: unset;    
+   }
+
+/*Active/focus*/
+ul.custom-tax-tree li.parent:active,  ul.custom-tax-tree li.parent:focus {color: #5281df;} 
+ul.custom-tax-tree li.parent a:active, ul.custom-tax-tree li.parent a:focus{color: #5281df;} 
+.custom-tax-tree a:focus, .custom-tax-tree a:active, .custom-tax-tree a:hover {text-decoration: none !important;}
+custom-tax-tree ul li a:focus, .custom-tax-tree ul li a:active {background:  !important; color: #5281df}
+.custom-tax-tree ul.children li a:focus, .custom-tax-tree ul.children li a:active {background:  !important; color: #5281df}
+
+
+div#tax-tree-container ul.custom-tax-tree li.parent, 
+div#tax-tree-container ul.custom-tax-tree ul.children li { font-size:1em; font-family: "Open Sans"; color:#444; }
+div#tax-tree-container ul.custom-tax-tree li span.fileimg span a {font-size: 1em;}
+
+.custom-tax-tree li {margin-bottom: 2px; padding-bottom: 2px !important; margin:0px !important; }
+
+ul.custom-tax-tree li.parent ul.children {
+    margin-top: 0px;
+    padding-left: 23px;
+}
+
+.custom-tax-tree li a {color: #444; font-size: 1em; font-family: "Open Sans"}
+.custom-tax-tree li a:hover {color: #5281df; text-decoration: none;}
+
+.custom-tax-tree .parent > a.toggle {
+    cursor: pointer;
+    text-decoration: none;
+ }
+
+
+/*Dashicons*/
+/*ul.custom-tax-tree .dashicons, ul.custom-tax-tree.dashicons-before::before{color: royalblue; text-decoration: none !important; 
+    font-size: 19px !important; display: inherit !important;}
+ul.custom-tax-tree li.parent a.toggle span.dashicons.dashicons-category span, 
+ul.custom-tax-tree li.parent a.toggle span.dashicons.dashicons-open-folder span {display: inherit; font-size: 18px !important; vertical-align:text-top; }*/
+
+
+/*Images*/
+.folderclosed {
+    background-image: url('../imgs/folder.gif');
+    background-repeat: no-repeat;
+    
+    }
+  .fileimg  {
+  background-image: url('../imgs/page.gif');
+    background-repeat: no-repeat;
+    margin-right: 7px;
+ }
+
+  .folderopen  {
+  background-image: url('../imgs/folderopen.gif');
+    background-repeat: no-repeat;
+ }
+
+span.fileimg, span.folderopen, span.folderclosed {
+    padding: 0px 3px 0px 10px;
+    background-size: 18px;
+    display: inline;
+ }
+
+
+ /* Update the dashicons color in style.css */
+ul.custom-post-tree .dashicons, 
+ul.custom-post-tree .dashicons-before::before {
+    color: royalblue; !important; /* Change from royalblue to blue */
+    text-decoration: none !important;
+    font-size: 19px !important; 
+    display: inherit !important;
+}
+
+.custom-post-tree a.active-post-link {
+    color: #0073aa; /* Customize this to match your theme */
+}
+
+
+/* Container and list styles */
+#tax-tree-container {
+    display: block;
+    text-align: left;
+}
+
+#tax-tree-container ul.custom-tax-tree {
+    list-style: none;
+    margin-bottom: 5px;
+    padding-left: 0;
+}
+
+#tax-tree-container ul.custom-tax-tree ul {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+/* List item styles */
+.custom-tax-tree li {
+    margin: 0;
+    padding-bottom: 2px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1em;
+    color: #444;
+}
+
+/* Parent toggle link styles */
+.custom-tax-tree .post-parent > a.post-toggle {
+    cursor: pointer;
+    text-decoration: none;
+    color: #444;
+}
+
+.custom-tax-tree .post-parent > a.post-toggle:hover {
+    color: #5281df;
+}
+
+/* Child/leaf term links */
+.custom-tax-tree li a {
+    color: #444;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+.custom-tax-tree li a:hover,
+.custom-tax-tree a:focus,
+.custom-tax-tree a:active {
+    color: #5281df;
+    text-decoration: none;
+}
+
+/* Active link highlight */
+.custom-tax-tree a.active-post-link {
+    color: #0073aa;
+    font-weight: bold;
+}
+
+/* Icons */
+span.folderclosed,
+span.folderopen,
+span.fileimg {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: 18px;
+    padding: 0 3px 0 10px;
+}
+
+.folderclosed {
+    background-image: url('../imgs/folder.gif');
+}
+
+.folderopen {
+    background-image: url('../imgs/folderopen.gif');
+}
+
+.fileimg {
+    background-image: url('../imgs/page.gif');
+    margin-right: 7px;
+}
+
+/* Dashicons override */
+.custom-tax-tree .dashicons,
+.custom-tax-tree .dashicons-before::before {
+    color: royalblue !important;
+    font-size: 19px !important;
+    display: inline-block;
+}
+
+/* Accessibility/interaction */
+.custom-tax-tree li.parent:active,
+.custom-tax-tree li.parent:focus,
+.custom-tax-tree li.parent a:active,
+.custom-tax-tree li.parent a:focus {
+    color: #5281df;
+}
